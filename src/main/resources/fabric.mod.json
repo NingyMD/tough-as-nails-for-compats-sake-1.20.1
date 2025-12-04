@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tan-fcs",
+	"version": "${version}",
+	"name": "Tough as Nails (For Compats Sake)",
+	"description": "The aim of this mod is to provide some vital Compatibilities to Tough as Nails that could make or break a modpack.",
+	"authors": [
+		"NingyMD"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tan-fcs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ningymd.tanfcs.ToughAsNailsForCompatsSake"
+		],
+		"fabric-datagen": [
+			"net.ningymd.tanfcs.ToughAsNailsForCompatsSakeDataGenerator"
+		]
+	},
+	"mixins": [
+		"tan-fcs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
